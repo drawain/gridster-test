@@ -13,7 +13,7 @@
     "angular": "global:angular"
   },
   "dependencies": {
-    "boar-stack": "0.3.0",
+    "boar-stack": "0.2.1",
     "koa": "0.21.0",
     "koa-router": "5.1.2",
     "logentries-logformat": "0.0.2",
