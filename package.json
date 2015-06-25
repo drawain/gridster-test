@@ -31,7 +31,11 @@
     "chai-as-promised": "5.1.0",
     "chai-subset": "1.0.1",
     "co-supertest": "0.0.10",
+    "gridster": "git+https://github.com/dsmorse/gridster.js.git",
     "gulp": "3.9.0",
+    "highcharts": "0.0.8",
+    "highcharts-ng-temp": "0.0.9-dev",
+    "jquery": "2.1.4",
     "protractor": "2.1.0",
     "run-sequence": "1.1.0",
     "sinon-chai": "2.8.0"

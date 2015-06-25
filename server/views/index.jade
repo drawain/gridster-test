@@ -1,18 +1,33 @@
-doctype html
-html(lang='en')
-head
-    link(type="image/x-icon" rel="icon" href="http://www.emarsys.com/en/wp-content/themes/emarsys/img/icons/favicon.ico")
-    link(href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css')
-    link(rel="apple-touch-icon" href="http://www.emarsys.com/en/wp-content/themes/emarsys/img/ios-touch-icon/emarsys-touch-57x57.png")
-    link(rel="apple-touch-icon" sizes="72x72" href="http://www.emarsys.com/en/wp-content/themes/emarsys/img/ios-touch-icon/emarsys-touch-72x72.png")
-    link(rel="apple-touch-icon" sizes="114x114" href="http://www.emarsys.com/en/wp-content/themes/emarsys/img/ios-touch-icon/emarsys-touch-114x114.png")
-    link(rel="apple-touch-icon" sizes="144x144" href="http://www.emarsys.com/en/wp-content/themes/emarsys/img/ios-touch-icon/emarsys-touch-144x144.png")
-    meta(charset='utf-8')
-    title JS boilerplate
-    link(href='/css/welcome.css' rel='stylesheet' type='text/css')
-body
-    .content-container
-        .content
-            img.logo(src="/images/emarsys.svg")
-            h2 emarsys
-            h1 JS boilerplate
+extends layout
+
+block head
+  link(href='/css/dashboard.css' rel='stylesheet' type='text/css')
+
+block body
+  .e-row
+    .e-col-12
+      h1 Dashboard
+
+  .e-row(ng-controller="DashboardController as ctrl")
+    .e-col-12
+
+      .gridster
+        ul
+          li(data-row='1', data-col='1', data-sizex='1', data-sizey='1')
+            highchart(id="chart1" config="ctrl.chartConfig")
+          li(data-row='2', data-col='1', data-sizex='1', data-sizey='1') b
+          li(data-row='3', data-col='1', data-sizex='1', data-sizey='1') c
+          li(data-row='1', data-col='2', data-sizex='2', data-sizey='1') d
+          li(data-row='2', data-col='2', data-sizex='2', data-sizey='2') e
+          li(data-row='1', data-col='4', data-sizex='1', data-sizey='1')
+          li(data-row='2', data-col='4', data-sizex='2', data-sizey='1')
+          li(data-row='3', data-col='4', data-sizex='1', data-sizey='1')
+          li(data-row='1', data-col='5', data-sizex='1', data-sizey='1')
+          li(data-row='3', data-col='5', data-sizex='1', data-sizey='1')
+          li(data-row='1', data-col='6', data-sizex='1', data-sizey='1')
+          li(data-row='2', data-col='6', data-sizex='1', data-sizey='2')
+
+
+block body_bottom
+  script(src="/scripts/templates.js")
+  script(src="/scripts/dashboard.js")

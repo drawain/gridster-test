@@ -8,6 +8,4 @@ module.exports = ControllerFactory.create(function(router) {
 
   router.get('/healthcheck', ControllerFactory.load('main/actions/healthcheck/get'));
 
-  router.get('/list', ControllerFactory.loadByAcceptType('main/actions/list/get'));
-
 });
