@@ -19,7 +19,9 @@ class DashboardController {
     this.chartConfig = {
         options: {
             chart: {
-              type: 'line'
+              type: 'line',
+              width: 200,
+              height: 100
             }
         },
         series: [{
